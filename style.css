@@ -1,0 +1,438 @@
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('./Pokemon\ Solid.ttf') format('truetype');
+}
+
+body { background-color: white; min-height: 90vh; font-family: 'Lobster Two', cursive; font-family: 'Nunito Sans', sans-serif;}
+
+main{
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    display: flex;
+    height: 200px;
+    margin-top: 30px;
+    background-image: repeating-linear-gradient(60deg, #ccc, #ccc 1px, #fff 0px, #fff 2px);
+    background-size: 400px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Pokemon Solid";
+}
+
+header img{
+    transition: width 1s ease, height 1s ease;
+    cursor: pointer;
+}
+
+header img:hover{
+    width: 600px;
+    height: 400px;
+}
+
+.btnSearch{
+    border-color: rgb(108, 176, 221);
+    color: rgb(108, 176, 221);
+}
+
+.btnSearch:hover{
+    background-color: rgb(47, 104, 141);
+    color: black;
+}
+
+.boxBusquedaAvanzada{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    width: 1200px;
+    height: 150px;
+    background-color: #000000;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px!important;
+}
+
+.boxBusquedaAvanzada h1{
+    margin-top: .5em;
+}
+
+.cajaDrop{
+    display: flex;
+    align-items: center;
+}
+
+.cajaDrop p{
+    margin: 0 5px 0 0;
+}
+
+.boxPokeballs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1400px;
+    height: 100px;
+}
+
+.boxLineaPoke{
+    width: 50px;
+    height: 5px;
+    background-color: black;
+}
+
+.boxLineaPoke:nth-child(1){
+    width: 400px;
+}
+
+.boxLineaPoke:last-child{
+    width: 400px;
+}
+
+.imgPokeballs{
+    width: 60px;
+    height: 60px;
+}
+
+.aviso{
+    text-align: center;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+.imgPopUp{
+    width: 200px;
+    height: 200px;
+}
+
+.popup-content {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.popup-content h4{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btnPopUp {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnPopUp:hover {
+    background-color: #45a049;
+}
+
+.cajaPadreClass{
+    margin: 2em 5em 0em 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cajaElementos{
+    width: 400px;
+    height: 460px;
+    margin-bottom: 4em;
+}
+
+.cajaImagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid  black;
+}
+
+.imgPokemones{
+    height: 350px;
+    width: 350px;
+    transition: 1s ease;
+}
+
+.imgPokemones:hover{
+    transform: scale(1.2);
+}
+
+.cajaCaracteristicas{
+    background-color: black;
+    height: 150px;
+}
+
+.textoCaracteristicas{
+   color: white;
+   font-family: "Montserrat", sans-serif;
+}
+
+.textoCaracteristicas:nth-child(1){
+    text-align: center;
+    font-family: 'Pokemon Solid';
+    padding: 10px;
+    background-color: rgb(216, 9, 9);
+}
+
+
+.textoCaracteristicas:nth-child(2){
+    margin: 1em 0em 0em 18em;
+    width: 80px;
+    text-align: center;
+}
+
+.textoCaracteristicas:nth-child(3){
+    margin: -2em 0em 1em 1em;
+}
+
+.textoCaracteristicas:nth-child(4){
+    margin-left: 1em;
+}
+
+.iconoPelea{
+    width: 10px;
+    height: 10px;
+}
+
+.grass{
+    background-color: green;
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.fire{
+    background-color: red;
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.water{
+    background-color: rgb(73, 73, 235);
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.ice{
+    background-color: rgb(219, 219, 255);
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.bug{
+    background-color: green;
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.normal{
+    background-color: gray;
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.electric{
+    background-color: yellow;
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.ground{
+    background-color: rgb(187, 121, 0);
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.fairy{
+    background-color: pink;
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.poison{
+    background-color: rgb(140, 67, 214);
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.fighting{
+    background-color: orangered;
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.psychic{
+    background-color: pink;
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.rock{
+    background-color: rgb(122, 81, 4);
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.ghost{
+    background-color: rebeccapurple;
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+.dragon{
+    background-image: linear-gradient(bottom, #000000, #ffffff);
+    width: 46px;
+    padding: 10px 10px 10px 10px!important;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 260px) and (max-width: 374px){
+    header img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .boxBusquedaAvanzada{
+        width: 300px;
+        height: 120px;
+    }
+
+    .boxPokeballs{
+        width: 300px;
+    }
+
+    .imgPokeballs{
+        width: 20px;
+        height: 20px;
+    }
+
+    .cajaPadreClass{
+        margin: 2em 2em 0em 3.5em;
+    }
+
+    .cajaElementos{
+        width: 230px;
+        height: 260px;
+        margin-bottom: 18em;
+    }
+
+    .imgPokemones{
+        height: 250px;
+        width: 250px;
+    }
+
+    .textoCaracteristicas:nth-child(2){
+        margin: 1em 0em 0em 8em;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 764px){
+    header img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .boxBusquedaAvanzada{
+        width: 300px;
+        height: 120px;
+    }
+
+    .boxPokeballs{
+        width: 300px;
+    }
+
+    .imgPokeballs{
+        width: 20px;
+        height: 20px;
+    }
+
+    .cajaPadreClass{
+        margin: 2em 2em 0em 3em;
+        justify-content: center;
+    }
+
+    .cajaElementos{
+        width: 230px;
+        height: 260px;
+        margin-bottom: 18em;
+    }
+
+    .imgPokemones{
+        height: 250px;
+        width: 250px;
+    }
+
+    .textoCaracteristicas:nth-child(2){
+        margin: 1em 0em 0em 8em;
+    }
+    
+}
+
+@media screen and (min-width: 764px) and (max-width: 1024px){
+ 
+    header img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .boxBusquedaAvanzada{
+        width: 600px;
+        height: 130px;
+    }
+
+    .boxPokeballs{
+        width: 700px;
+    }
+
+    .imgPokeballs{
+        width: 30px;
+        height: 30px;
+    }
+
+    .cajaPadreClass{
+        margin: 2em 2em 0em 3em;
+    }
+
+    .cajaElementos{
+        width: 230px;
+        height: 260px;
+        margin-bottom: 18em;
+    }
+
+    .imgPokemones{
+        height: 250px;
+        width: 250px;
+    }
+
+    .textoCaracteristicas:nth-child(2){
+        margin: 1em 0em 0em 8em;
+    }
+}
