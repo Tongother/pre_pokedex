@@ -74,7 +74,7 @@ header img:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1400px;
+    width: 1300px;
     height: 100px;
 }
 
@@ -149,9 +149,9 @@ header img:hover{
 }
 
 .cajaElementos{
-    width: 400px;
-    height: 460px;
-    margin-bottom: 4em;
+    width: 350px;
+    height: 420px;
+    margin-bottom: 8em;
 }
 
 .cajaImagen{
@@ -169,7 +169,7 @@ header img:hover{
 }
 
 .imgPokemones:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .cajaCaracteristicas{
@@ -178,8 +178,9 @@ header img:hover{
 }
 
 .textoCaracteristicas{
-   color: white;
-   font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
 .textoCaracteristicas:nth-child(1){
@@ -191,7 +192,7 @@ header img:hover{
 
 
 .textoCaracteristicas:nth-child(2){
-    margin: 1em 0em 0em 18em;
+    margin: 1em 0em 0em 17em;
     width: 80px;
     text-align: center;
 }
@@ -212,105 +213,106 @@ header img:hover{
 .grass{
     background-color: green;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .fire{
     background-color: red;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .water{
     background-color: rgb(73, 73, 235);
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .ice{
     background-color: rgb(219, 219, 255);
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .bug{
     background-color: green;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .normal{
     background-color: gray;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .electric{
     background-color: yellow;
+    color: black;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .ground{
     background-color: rgb(187, 121, 0);
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .fairy{
     background-color: pink;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .poison{
     background-color: rgb(140, 67, 214);
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .fighting{
     background-color: orangered;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .psychic{
     background-color: pink;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .rock{
     background-color: rgb(122, 81, 4);
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .ghost{
     background-color: rebeccapurple;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
 .dragon{
-    background-image: linear-gradient(bottom, #000000, #ffffff);
+    background-color: red;
     width: 46px;
-    padding: 10px 10px 10px 10px!important;
+    padding: 9px 9px 9px 9px!important;
     border-radius: 15px;
 }
 
@@ -335,13 +337,17 @@ header img:hover{
     }
 
     .cajaPadreClass{
-        margin: 2em 2em 0em 3.5em;
+        margin: 2em 2em 0em 2em;
     }
 
     .cajaElementos{
-        width: 230px;
-        height: 260px;
+        width: 260px;
+        height: 250px;
         margin-bottom: 18em;
+    }
+
+    .cajaCaracteristicas{
+        height: 130px;
     }
 
     .imgPokemones{
@@ -349,8 +355,20 @@ header img:hover{
         width: 250px;
     }
 
+    .textoCaracteristicas{
+        font-size: 12px;
+    }
+
     .textoCaracteristicas:nth-child(2){
-        margin: 1em 0em 0em 8em;
+        margin: 1em 0em 0em 14.5em;
+    }
+
+    .textoCaracteristicas:nth-child(3){
+        margin: -2.1em 0em 1em 0.5em;
+    }
+
+    .textoCaracteristicas:nth-child(4){
+        margin-left: 0.5em;
     }
 }
 
@@ -375,13 +393,13 @@ header img:hover{
     }
 
     .cajaPadreClass{
-        margin: 2em 2em 0em 3em;
+        margin: 2em 2em 0em 2.5em;
         justify-content: center;
     }
 
     .cajaElementos{
-        width: 230px;
-        height: 260px;
+        width: 300px;
+        height: 250px;
         margin-bottom: 18em;
     }
 
@@ -391,7 +409,15 @@ header img:hover{
     }
 
     .textoCaracteristicas:nth-child(2){
-        margin: 1em 0em 0em 8em;
+        margin: 1em 0em 0em 14em;
+    }
+
+    .textoCaracteristicas:nth-child(3){
+        margin: -2.1em 0em 1em 0.5em;
+    }
+
+    .textoCaracteristicas:nth-child(4){
+        margin-left: 0.5em;
     }
     
 }
@@ -422,7 +448,7 @@ header img:hover{
     }
 
     .cajaElementos{
-        width: 230px;
+        width: 320px;
         height: 260px;
         margin-bottom: 18em;
     }
@@ -433,6 +459,14 @@ header img:hover{
     }
 
     .textoCaracteristicas:nth-child(2){
-        margin: 1em 0em 0em 8em;
+        margin: 1em 0em 0em 15.5em;
+    }
+
+    .textoCaracteristicas:nth-child(3){
+        margin: -2.1em 0em 1em 0.5em;
+    }
+
+    .textoCaracteristicas:nth-child(4){
+        margin-left: 0.5em;
     }
 }

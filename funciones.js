@@ -65,7 +65,7 @@ let cartasPokemons = [];
             pElement[0].innerHTML = "N. ° " +  contadorPokemon(response2.id);
             pElement[1].innerHTML = capitalizeFirstLetter(response2.types[0].type.name); capitalizeFirstLetter(pokemon.name);
             pElement[2].innerHTML = capitalizeFirstLetter(pokemon.name);
-            pElement[3].innerHTML = "Attack: " + capitalizeFirstLetter(response2.abilities[0].ability.name + "<i class=fa-solid" + "fa-dagger iconoPelea></i>");
+            pElement[3].innerHTML = "Attack: " + capitalizeFirstLetter(response2.abilities[0].ability.name);
 
             if(response2.types[0].type.name == "grass"){
                 pElement[1].classList.add("grass");
@@ -142,7 +142,9 @@ const ordenarA_Z = () => {
         maximoDeCartasPokemons=0;
         pokemonesAZ = response.results.sort((a, b) => a.name.localeCompare(b.name));
         allPokemons = pokemonesAZ;
-        renderizarPokemons(pokemonesAZ);
+        setTimeout(() =>{
+            renderizarPokemons(pokemonesAZ)
+        }, 1000);
     });
 }
 
@@ -154,7 +156,9 @@ const ordenarZ_A = () => {
         maximoDeCartasPokemons=0;
         pokemonesAZ = response.results.sort((a, b) => b.name.localeCompare(a.name));
         allPokemons = pokemonesAZ;
-        renderizarPokemons(pokemonesAZ);
+        setTimeout(() =>{
+            renderizarPokemons(pokemonesAZ)
+        }, 1000);
     });
 }
 
@@ -166,7 +170,9 @@ const ordenarNumInferior = () => {
         maximoDeCartasPokemons=0;
         pokemonesAZ = response.results;
         allPokemons = pokemonesAZ;
-        renderizarPokemons(pokemonesAZ);
+        setTimeout(() =>{
+            renderizarPokemons(pokemonesAZ)
+        }, 1000);
     });
 }
 
@@ -178,7 +184,9 @@ const ordenarNumSuperior = () => {
         maximoDeCartasPokemons=0;
         pokemonesAZ = response.results.reverse();
         allPokemons = pokemonesAZ;
-        renderizarPokemons(pokemonesAZ);
+        setTimeout(() =>{
+            renderizarPokemons(pokemonesAZ)
+        }, 1000);
     });
 }
 
